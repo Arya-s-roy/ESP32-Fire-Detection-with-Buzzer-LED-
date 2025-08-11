@@ -7,3 +7,6 @@
 
 const char* ssid = "YOUR_WIFI";
 const char* password = "YOUR_PASS";
+const char* serverURL = "http://example.com/fire_alert"; // Replace with your server
+
+

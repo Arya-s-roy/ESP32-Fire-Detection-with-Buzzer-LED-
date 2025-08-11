@@ -24,6 +24,9 @@ void setup() {
 void loop() {
   int fireValue = analogRead(FIRE_SENSOR_PIN);
   Serial.println(fireValue);
+  if (fireValue < 300) { // Fire detected
+    digitalWrite(BUZZER_PIN, HIGH);
+    digitalWrite(LED_PIN, HIGH);
 
 
 

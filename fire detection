@@ -30,6 +30,13 @@ void loop() {
  }
   delay(1000);
 }
+void sendAlert() {
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    http.begin(serverURL);
+    http.addHeader("Content-Type", "application/json");
+
+
 
 
 

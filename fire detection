@@ -1,0 +1,9 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+#define FIRE_SENSOR_PIN 34
+#define BUZZER_PIN 26
+#define LED_PIN 25
+
+const char* ssid = "YOUR_WIFI";
+const char* password = "YOUR_PASS";

@@ -35,6 +35,13 @@ void sendAlert() {
     HTTPClient http;
     http.begin(serverURL);
     http.addHeader("Content-Type", "application/json");
+    String payload = "{\"status\":\"fire detected\"}";
+    int httpResponseCode = http.POST(payload);
+    Serial.println("Alert sent. Code: " + String(httpResponseCode));
+    http.end();
+  }
+}
+
 
 
 

@@ -21,5 +21,9 @@ void setup() {
   }
   Serial.println("\nConnected to WiFi");
 }
+void loop() {
+  int fireValue = analogRead(FIRE_SENSOR_PIN);
+  Serial.println(fireValue);
+
 
 

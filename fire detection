@@ -27,6 +27,9 @@ void loop() {
   if (fireValue < 300) { // Fire detected
     digitalWrite(BUZZER_PIN, HIGH);
     digitalWrite(LED_PIN, HIGH);
+ }
+  delay(1000);
+}
 
 
 
